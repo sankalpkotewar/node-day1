@@ -1,0 +1,28 @@
+Number, string, boolean, object, function, Symbol are basic types
+
+undefined and null are special values
+
+0, empty string, undefined, null, and NaN are falsy
+
+For variables, use let. Use const for constants
+
+Constants cannot be reassigned
+
+Uninitialized variables are 'undefined'
+
+Constants must be initialized
+
+Using var for variables, splits the declaration and assignment parts. Declaration is hoisted (to the top) and assignment happens at the line written.
+
+Functions can be written as named functions, function expressions (with function keyword or lambda expressions)
+
+Functions can be passed as arguments to other functions. This is the basis of callbacks.
+
+JavaScript has the single threaded execution model, but asynchrony is handled by external APIs. These APIs either create tasks or microtasks. For example, setTimeOut creates a task, while then() method of Promise creates a microtask.
+
+Task >> Stack (synchronous JS lines) >> Microtasks >> Task ... This is the JS event loop.
+
+
+
+
+
