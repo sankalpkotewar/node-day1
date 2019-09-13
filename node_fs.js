@@ -11,13 +11,18 @@ fs.readFile('example.txt', 'utf8', (err, data) => {
 
 // Write a file
 // If file exists append, else create a new one
-fs.appendFile('write.txt', 'What were you reading of late?\n', err => {
-  if (err) {
-    console.log('Write/append operation error', err);
-  } else {
-    console.log('Write/append operation completed');
+fs.appendFile(
+  'write.txt',
+  'What were you reading of late?\n',
+  { encoding: 'UTF8' },
+  err => {
+    if (err) {
+      console.log('Write/append operation error', err);
+    } else {
+      console.log('Write/append operation completed');
+    }
   }
-});
+);
 
 // Create a new file it doesn't exist. If exists, overwrite the file
 fs.writeFile('overwriting.txt', 'This is a test file', err => {
