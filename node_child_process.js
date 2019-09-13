@@ -1,3 +1,5 @@
+//  for Windows, spwan has to work differently: https://stackoverflow.com/questions/18334181/spawn-on-node-js-windows-server-2012
+
 const { spawn, exec } = require('child_process');
 const command = spawn('ab', ['-n', '100', '-c', '100', 'http://google.co.in/']);
 
