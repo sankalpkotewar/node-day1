@@ -33,6 +33,8 @@ writerStream.end();
 // Writer Stream events: finish and error
 writerStream.on('finish', () => {
   console.log('Written');
+  //  closing the stream
+  writerStream.close();
 });
 
 writerStream.on('error', err => {
