@@ -13,6 +13,7 @@ readerStream.on('data', fragment => {
 readerStream.on('end', () => {
   // Operation complete
   console.log(content);
+  readerStream.close();
 });
 
 readerStream.on('error', err => {
