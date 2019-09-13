@@ -11,6 +11,7 @@ fs.readFile('example.txt', 'utf8', (err, data) => {
 
 // Write a file
 // If file exists append, else create a new one
+//  https://nodejs.org/dist/latest-v10.x/docs/api/fs.html#fs_file_system_flags
 fs.appendFile(
   'write.txt',
   'What were you reading of late?\n',
